@@ -126,3 +126,27 @@ class Book
         return "("+bookId+","+bookPrice+","+bookName+","+bookAuthor+")";
     }
 }
+
+class Student 
+{
+	int sId;
+    String sName,branch;
+    int bookId;
+    String bookName,bookAuthor;
+
+    public Student(int sId, String sName, String branch,int bookId,String bookName,String bookAuthor) {
+        // TODO Auto-generated constructor stub
+        this.sId=sId;
+        this.sName=sName;
+        this.branch=branch;
+        this.bookId=bookId;
+        this.bookName=bookName;
+        this.bookAuthor=bookAuthor;
+    }
+
+	@Override
+	public String toString() {
+		return "Student [sId=" + sId + ", sName=" + sName + ", branch=" + branch + ", bookId=" + bookId
+				+ ", bookName=" + bookName + ", bookAuthor=" + bookAuthor +"]";
+	}
+}
